@@ -18248,6 +18248,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 936329571}
     m_Modifications:
+    - target: {fileID: -854240537049079993, guid: 2aa4d195182b8d24ba0daa1fa2755502, type: 3}
+      propertyPath: m_Size.y
+      value: 5.299766
+      objectReference: {fileID: 0}
+    - target: {fileID: -854240537049079993, guid: 2aa4d195182b8d24ba0daa1fa2755502, type: 3}
+      propertyPath: m_Offset.y
+      value: 2.3595603
+      objectReference: {fileID: 0}
     - target: {fileID: 3047644616035173452, guid: 2aa4d195182b8d24ba0daa1fa2755502, type: 3}
       propertyPath: SceneName
       value: Scene3

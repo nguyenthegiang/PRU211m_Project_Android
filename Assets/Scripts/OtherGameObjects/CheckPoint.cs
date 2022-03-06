@@ -18,7 +18,17 @@ public class CheckPoint : MonoBehaviour
         GameObject touchedObject = collision.gameObject;
         if (touchedObject.tag == "Player")
         {
-             touchedObject.GetComponent<PlayerMovement>().checkPointPassed = transform.position;
+            PlayerMovement playerMovement = touchedObject.GetComponent<PlayerMovement>();
+            if (playerMovement != null)
+            {
+                playerMovement.checkPointPassed = transform.position;
+            }
+            else 
+            {
+                UnderwaterMovement underwaterMovement = touchedObject.GetComponent<UnderwaterMovement>();
+                underwaterMovement.checkPointPassed = transform.position;
+            }
+
 
             UpdateSavedPositionFile();
         }
