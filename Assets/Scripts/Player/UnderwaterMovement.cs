@@ -52,11 +52,7 @@ public class UnderwaterMovement : MonoBehaviour
             Vector3 moveVector = new Vector3(_horizontalMove, _verticalMove, 0);
             body.velocity = moveVector.normalized * speed;
 
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                GameObject bomb = Instantiate(submarineBomb, spawnPosition, Quaternion.identity);
-                bomb.GetComponent<Rigidbody2D>().AddForce(2f * Vector3.down);
-            }
+            
             spawnPosition = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y - objectHeight, gameObject.transform.position.z);
 
         }
@@ -65,7 +61,13 @@ public class UnderwaterMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        
+       
+    }
+
+    public void DropBomb()
+    {
+        GameObject bomb = Instantiate(submarineBomb, spawnPosition, Quaternion.identity);
+        bomb.GetComponent<Rigidbody2D>().AddForce(2f * Vector3.down);
     }
 
     private void Flip()
