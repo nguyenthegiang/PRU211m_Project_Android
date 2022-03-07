@@ -4,16 +4,16 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -8214961022964630197
-    second: androidMovementButton_0
+    second: androidMovementButton_up
   - first:
       213: -2995648919445096883
-    second: androidMovementButton_1
+    second: androidMovementButton_left
   - first:
       213: 122057996584575509
-    second: androidMovementButton_2
+    second: androidMovementButton_down
   - first:
       213: -7068637849495670703
-    second: androidMovementButton_3
+    second: androidMovementButton_right
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -127,7 +127,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: androidMovementButton_0
+      name: androidMovementButton_up
       rect:
         serializedVersion: 2
         x: 211
@@ -135,7 +135,7 @@ TextureImporter:
         width: 190
         height: 220
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -148,7 +148,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: androidMovementButton_1
+      name: androidMovementButton_left
       rect:
         serializedVersion: 2
         x: 1
@@ -156,7 +156,7 @@ TextureImporter:
         width: 190
         height: 220
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -169,7 +169,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: androidMovementButton_2
+      name: androidMovementButton_down
       rect:
         serializedVersion: 2
         x: 211
@@ -177,7 +177,7 @@ TextureImporter:
         width: 190
         height: 220
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -190,7 +190,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: androidMovementButton_3
+      name: androidMovementButton_right
       rect:
         serializedVersion: 2
         x: 421
@@ -198,7 +198,7 @@ TextureImporter:
         width: 190
         height: 220
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
