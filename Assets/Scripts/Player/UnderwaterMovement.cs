@@ -11,6 +11,9 @@ public class UnderwaterMovement : MonoBehaviour
     [SerializeField]
     public HeartManager heartManager;
 
+    [SerializeField]
+    public Joystick joystick;
+
     public Vector3 checkPointPassed;
 
     float _horizontalMove;
@@ -33,8 +36,8 @@ public class UnderwaterMovement : MonoBehaviour
     {
         if (hasControl)
         {
-            _horizontalMove = Input.GetAxis("Horizontal");
-            _verticalMove = Input.GetAxis("Vertical");
+            _horizontalMove = joystick.Horizontal;
+            _verticalMove = joystick.Vertical;
             if (_horizontalMove > 0 && !m_FacingRight)
             {
                 // ... flip the player.
