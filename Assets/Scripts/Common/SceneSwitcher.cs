@@ -64,4 +64,9 @@ public class SceneSwitcher : MonoBehaviour
         //start from beginning
         loadSceneByName("Scene1");
     }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }
