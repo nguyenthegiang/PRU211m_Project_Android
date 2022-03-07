@@ -231,7 +231,7 @@ GameObject:
   - component: {fileID: 199696287}
   - component: {fileID: 199696286}
   m_Layer: 5
-  m_Name: Level2 (1)
+  m_Name: Level3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -849,7 +849,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1092619446}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1852952226}
+        m_TargetAssemblyTypeName: SceneSwitcher, Assembly-CSharp
+        m_MethodName: loadSceneByName
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: GameMenu
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1092619446
 MonoBehaviour:
   m_ObjectHideFlags: 0
