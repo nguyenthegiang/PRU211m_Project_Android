@@ -1231,7 +1231,7 @@ GameObject:
   - component: {fileID: 301874188}
   - component: {fileID: 301874187}
   - component: {fileID: 301874186}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RotationTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14223,7 +14223,7 @@ GameObject:
   - component: {fileID: 525891900}
   - component: {fileID: 525891902}
   - component: {fileID: 525891901}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HiddenDetectorBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31787,7 +31787,7 @@ GameObject:
   - component: {fileID: 1458340942}
   - component: {fileID: 1458340944}
   - component: {fileID: 1458340945}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RockTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31920,7 +31920,7 @@ GameObject:
   - component: {fileID: 1479352143}
   - component: {fileID: 1479352145}
   - component: {fileID: 1479352144}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HIddenDetectorForward
   m_TagString: Untagged
   m_Icon: {fileID: 0}
