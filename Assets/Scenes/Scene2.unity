@@ -33300,6 +33300,10 @@ PrefabInstance:
       propertyPath: hearts.Array.data[9]
       value: 
       objectReference: {fileID: 1841587653}
+    - target: {fileID: 226605911, guid: 0e3d8dfcbf1011c4ba65386bbda93557, type: 3}
+      propertyPath: SceneName
+      value: Scene2
+      objectReference: {fileID: 0}
     - target: {fileID: 464098750339575378, guid: 0e3d8dfcbf1011c4ba65386bbda93557, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -33359,30 +33363,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 464098750339575378, guid: 0e3d8dfcbf1011c4ba65386bbda93557, type: 3}
   m_PrefabInstance: {fileID: 1819039171}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1819039173 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 464098750339575383, guid: 0e3d8dfcbf1011c4ba65386bbda93557, type: 3}
-  m_PrefabInstance: {fileID: 1819039171}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1819039174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1819039173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9b0c06d8b6665048bc355d4b33b6a6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SceneName: Scene2
 --- !u!114 &1819039175 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 464098750339575376, guid: 0e3d8dfcbf1011c4ba65386bbda93557, type: 3}
   m_PrefabInstance: {fileID: 1819039171}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1819039173}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4bc7301790599a04ea1833af9dfe2179, type: 3}
