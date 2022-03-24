@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SceneSwitcher : MonoBehaviour
 {
@@ -15,6 +16,15 @@ public class SceneSwitcher : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(name);
     }
+
+    //Different function for Load Scene 3 from [Select Level] to avoid bug
+    public void loadScene3()
+    {
+        removeSavedPosition();
+
+        SceneManager.LoadSceneAsync("Scene3");
+    }
+
     public static void goToGameOverScene() {
         //store the index of last scene
         _lastSceneIndex = SceneManager.GetActiveScene().buildIndex;
@@ -23,10 +33,7 @@ public class SceneSwitcher : MonoBehaviour
     }
 
     public void restartLastScene() {
-        //Delete file that store saved position to refresh
-        JsonHandler handler = gameObject.AddComponent<JsonHandler>();
-        handler.data = new SavedPositionData();
-        handler.Save();
+        removeSavedPosition();
 
         SceneManager.LoadSceneAsync(_lastSceneIndex);
     }
@@ -49,20 +56,26 @@ public class SceneSwitcher : MonoBehaviour
         } catch (Exception ex)
         {
             //if can't find file -> go to Scene 1 (default)
-            loadSceneByName("Scene1");
+            //loadSceneByName("Scene1");
+            GetComponent<Button>().interactable = false;
         }
     }
 
     //this method is called when user click the Start button in Game Menu
     public void StartButtonClick()
     {
-        //Delete file that store saved position to refresh
-        JsonHandler handler = gameObject.AddComponent<JsonHandler>();
-        handler.data = new SavedPositionData();
-        handler.Save();
+        removeSavedPosition();
 
         //start from beginning
         loadSceneByName("Scene1");
+    }
+
+    //Delete file that store saved position to refresh
+    public void removeSavedPosition()
+    {
+        JsonHandler handler = gameObject.AddComponent<JsonHandler>();
+        handler.data = new SavedPositionData();
+        handler.Save();
     }
 
     public void Quit()
