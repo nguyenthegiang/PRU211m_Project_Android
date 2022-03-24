@@ -56,8 +56,7 @@ public class SceneSwitcher : MonoBehaviour
         } catch (Exception ex)
         {
             //if can't find file -> go to Scene 1 (default)
-            //loadSceneByName("Scene1");
-            GetComponent<Button>().interactable = false;
+            loadSceneByName("Scene1");
         }
     }
 
