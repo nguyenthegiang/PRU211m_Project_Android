@@ -63,6 +63,7 @@ public class SavedPositionData
 {
     public Vector3 position;
     public string sceneName;
+    public int health;
 
     public SavedPositionData()
     {

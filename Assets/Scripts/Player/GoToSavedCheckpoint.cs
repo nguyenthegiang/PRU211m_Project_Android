@@ -15,7 +15,7 @@ public class GoToSavedCheckpoint : MonoBehaviour
         try
         {
             //load file
-            JsonHandler handler = gameObject.AddComponent<JsonHandler>();
+            JsonHandler handler = gameObject.GetComponent<JsonHandler>();
             handler.Load();
             
             //if data empty -> not go to checkpoint

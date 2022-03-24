@@ -18372,6 +18372,10 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -2456113541462624727, guid: 0e3d8dfcbf1011c4ba65386bbda93557, type: 3}
+      propertyPath: SceneName
+      value: Scene3
+      objectReference: {fileID: 0}
+    - target: {fileID: -2456113541462624727, guid: 0e3d8dfcbf1011c4ba65386bbda93557, type: 3}
       propertyPath: hearts.Array.size
       value: 10
       objectReference: {fileID: 0}

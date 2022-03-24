@@ -53,7 +53,7 @@ public class SceneSwitcher : MonoBehaviour
             }
             //go to scene
             loadSceneByName(handler.data.sceneName);
-        } catch (Exception ex)
+        } catch (Exception)
         {
             //if can't find file -> go to Scene 1 (default)
             loadSceneByName("Scene1");
