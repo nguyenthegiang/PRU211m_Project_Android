@@ -15,6 +15,11 @@ public class PlayerMovement : MonoBehaviour
     float horizontalMove = 0f;
     bool isJumping = false;
 
+    [Header("SoundFX")]
+    [SerializeField]
+    AudioClip deathClip;
+    [SerializeField]
+    AudioClip jumpClip;
     // check if player have control of main character
     bool isDying = false;
     bool hasControl = true;
@@ -22,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
 
     //the checkpoint at which the Character will respawn
     public Vector3 checkPointPassed;
-
+    AudioSource audioSource;
     //for androidMovement
     private bool moveLeft;
     private bool moveRight;
@@ -34,6 +39,7 @@ public class PlayerMovement : MonoBehaviour
         //init heart manager
         heartManager = gameObject.GetComponent<HeartManager>();
         timer = gameObject.AddComponent<Timer>();
+        audioSource = gameObject.GetComponent<AudioSource>();
     }
 
     //For Android
@@ -89,6 +95,7 @@ public class PlayerMovement : MonoBehaviour
             if (moveJump)
             {
                 isJumping = true;
+                audioSource.PlayOneShot(jumpClip);
                 animator.SetBool("isJumping", true);
             }
             else
@@ -121,7 +128,7 @@ public class PlayerMovement : MonoBehaviour
         {
             
             animator.SetBool("dead", true);
-            
+            audioSource.PlayOneShot(deathClip);
             StartCoroutine(waiter());
         }
     }
