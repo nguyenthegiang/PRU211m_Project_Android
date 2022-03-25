@@ -8,7 +8,7 @@ public class FallingWallTrigger : MonoBehaviour
     GameObject[] spikes;
 
     Timer timer;
-    bool isTriggered = false;
+    public bool isTriggered = false;
 
     private void Start()
     {

@@ -20,6 +20,7 @@ public class UnderwaterMovement : MonoBehaviour
     float _verticalMove;
     bool m_FacingRight = false;
     bool hasControl = true;
+    bool isDying = false;
     Rigidbody2D body;
     Vector3 spawnPosition;
     float objectHeight;
@@ -96,9 +97,10 @@ public class UnderwaterMovement : MonoBehaviour
     {
         // disable player control
         hasControl = false;
+        isDying = true;
 
         //stop all movement on main character
-        gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+        //gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
 
         yield return new WaitForSeconds(0.75f);
         if (heartManager.health > 0)
@@ -113,6 +115,8 @@ public class UnderwaterMovement : MonoBehaviour
         }
 
         hasControl = true;
+        isDying = false;
+
     }
 
 

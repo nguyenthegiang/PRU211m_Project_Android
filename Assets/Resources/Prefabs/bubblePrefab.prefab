@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1857458492225836886}
   - component: {fileID: 3647415936314868836}
   - component: {fileID: 5905435244711808946}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: bubblePrefab
   m_TagString: Hazard
   m_Icon: {fileID: 0}

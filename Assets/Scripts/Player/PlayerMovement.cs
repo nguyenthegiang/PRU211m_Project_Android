@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     bool isJumping = false;
 
     // check if player have control of main character
+    bool isDying = false;
     bool hasControl = true;
     Timer timer;
 
@@ -116,7 +117,7 @@ public class PlayerMovement : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //if touch a Hazard -> die
-        if (collision.gameObject.tag == "Hazard")
+        if (collision.gameObject.tag == "Hazard" && !isDying)
         {
             
             animator.SetBool("dead", true);
@@ -129,6 +130,7 @@ public class PlayerMovement : MonoBehaviour
     IEnumerator waiter()
     {
         // disable player control
+        isDying = true;
         hasControl = false;
 
         //stop all movement on main character
@@ -146,6 +148,7 @@ public class PlayerMovement : MonoBehaviour
             SceneSwitcher.goToGameOverScene();
         }
 
+        isDying = false;
         hasControl = true;
     }
 

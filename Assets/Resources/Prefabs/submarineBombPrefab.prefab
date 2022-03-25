@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1021799166491926740}
   - component: {fileID: 5747733590132158473}
   - component: {fileID: 2917861185392597650}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: submarineBombPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
