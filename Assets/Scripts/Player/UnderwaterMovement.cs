@@ -100,7 +100,7 @@ public class UnderwaterMovement : MonoBehaviour
         isDying = true;
 
         //stop all movement on main character
-        //gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+        gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
 
         yield return new WaitForSeconds(0.75f);
         if (heartManager.health > 0)
