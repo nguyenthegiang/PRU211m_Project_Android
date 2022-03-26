@@ -21869,11 +21869,11 @@ MonoBehaviour:
   heartManager: {fileID: 1039886994}
   joystick: {fileID: 1295764560}
   divingClip: {fileID: 8300000, guid: 9bf0009eb354193479fc28d484b60fd8, type: 3}
-  divingVolume: 1
+  divingVolume: 2.19
   deathClip: {fileID: 8300000, guid: eb0d42b0e48f9b046b1a20b2850bbbaa, type: 3}
-  deathVolume: 1
+  deathVolume: 1.85
   explosionClip: {fileID: 8300000, guid: 0654d302ce231834b8151d7c51797eb2, type: 3}
-  explosionVolume: 2
+  explosionVolume: 2.91
   checkPointPassed: {x: 0, y: 0, z: 0}
 --- !u!114 &1039886994 stripped
 MonoBehaviour:
@@ -37546,7 +37546,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3435552556740290184, guid: 9133657b97213164d906a8f575bc331a, type: 3}
       propertyPath: m_Volume
-      value: 0.6
+      value: 0.229
       objectReference: {fileID: 0}
     - target: {fileID: 3435552556740290184, guid: 9133657b97213164d906a8f575bc331a, type: 3}
       propertyPath: m_audioClip
