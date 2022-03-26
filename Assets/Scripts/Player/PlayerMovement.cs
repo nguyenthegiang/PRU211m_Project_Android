@@ -18,8 +18,10 @@ public class PlayerMovement : MonoBehaviour
     [Header("SoundFX")]
     [SerializeField]
     AudioClip deathClip;
+    [SerializeField] [Range(0f, 1f)] float deathVolume = 1f;
     [SerializeField]
     AudioClip jumpClip;
+    [SerializeField, Range(0f, 1f)] float jumpVolume = 1f;
     // check if player have control of main character
     bool isDying = false;
     bool hasControl = true;
@@ -95,7 +97,7 @@ public class PlayerMovement : MonoBehaviour
             if (moveJump)
             {
                 isJumping = true;
-                audioSource.PlayOneShot(jumpClip);
+                audioSource.PlayOneShot(jumpClip,jumpVolume);
                 animator.SetBool("isJumping", true);
             }
             else
@@ -128,7 +130,7 @@ public class PlayerMovement : MonoBehaviour
         {
             
             animator.SetBool("dead", true);
-            audioSource.PlayOneShot(deathClip);
+            audioSource.PlayOneShot(deathClip,deathVolume);
             StartCoroutine(waiter());
         }
     }

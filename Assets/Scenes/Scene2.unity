@@ -1493,6 +1493,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3435552556740290184, guid: 9133657b97213164d906a8f575bc331a, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: be609c25bfab6914a90208e82f69a91e, type: 3}
     - target: {fileID: 3435552556740290185, guid: 9133657b97213164d906a8f575bc331a, type: 3}
       propertyPath: m_Name
       value: AudioPlayer
@@ -32907,14 +32911,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 362304875}
     m_Modifications:
-    - target: {fileID: 2131676399, guid: da077cc8f38a91b4fa2bfcf1c77ed55d, type: 3}
-      propertyPath: m_Radius
-      value: 0.48874873
-      objectReference: {fileID: 0}
-    - target: {fileID: 2131676399, guid: da077cc8f38a91b4fa2bfcf1c77ed55d, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.049212236
-      objectReference: {fileID: 0}
     - target: {fileID: 4102042047251203946, guid: da077cc8f38a91b4fa2bfcf1c77ed55d, type: 3}
       propertyPath: m_Name
       value: RunningRock
@@ -32963,26 +32959,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4102042047251203949, guid: da077cc8f38a91b4fa2bfcf1c77ed55d, type: 3}
-      propertyPath: m_Size.x
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 4102042047251203949, guid: da077cc8f38a91b4fa2bfcf1c77ed55d, type: 3}
-      propertyPath: m_Size.y
-      value: 11.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 4102042047251203949, guid: da077cc8f38a91b4fa2bfcf1c77ed55d, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 3a69017b25a26ce43897eacea76138f2, type: 3}
-    - target: {fileID: 4102042047251203949, guid: da077cc8f38a91b4fa2bfcf1c77ed55d, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6599823434835451968, guid: da077cc8f38a91b4fa2bfcf1c77ed55d, type: 3}
-      propertyPath: RunningRockPrefab
-      value: 
-      objectReference: {fileID: 4102042047251203946, guid: da077cc8f38a91b4fa2bfcf1c77ed55d, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da077cc8f38a91b4fa2bfcf1c77ed55d, type: 3}
 --- !u!4 &1720682254 stripped
@@ -33314,14 +33290,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -2456113541462624727, guid: 0e3d8dfcbf1011c4ba65386bbda93557, type: 3}
-      propertyPath: SceneName
-      value: Scene2
-      objectReference: {fileID: 0}
-    - target: {fileID: -2456113541462624727, guid: 0e3d8dfcbf1011c4ba65386bbda93557, type: 3}
-      propertyPath: hearts.Array.size
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: -2456113541462624727, guid: 0e3d8dfcbf1011c4ba65386bbda93557, type: 3}
       propertyPath: hearts.Array.data[0]
       value: 
       objectReference: {fileID: 1503700287}
@@ -33361,10 +33329,6 @@ PrefabInstance:
       propertyPath: hearts.Array.data[9]
       value: 
       objectReference: {fileID: 1841587653}
-    - target: {fileID: 226605911, guid: 0e3d8dfcbf1011c4ba65386bbda93557, type: 3}
-      propertyPath: SceneName
-      value: Scene2
-      objectReference: {fileID: 0}
     - target: {fileID: 464098750339575378, guid: 0e3d8dfcbf1011c4ba65386bbda93557, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -33413,10 +33377,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainCharacter
       objectReference: {fileID: 0}
-    - target: {fileID: 464098750339575390, guid: 0e3d8dfcbf1011c4ba65386bbda93557, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: 73dacd22533486a4cb3d9374c8a7dfe0, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e3d8dfcbf1011c4ba65386bbda93557, type: 3}
 --- !u!4 &1819039172 stripped

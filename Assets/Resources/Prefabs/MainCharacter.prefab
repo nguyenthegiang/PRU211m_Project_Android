@@ -225,8 +225,10 @@ MonoBehaviour:
   runSpeed: 25
   animator: {fileID: 464098750339575380}
   heartManager: {fileID: 0}
-  deathClip: {fileID: 0}
-  jumpClip: {fileID: 0}
+  deathClip: {fileID: 8300000, guid: eb0d42b0e48f9b046b1a20b2850bbbaa, type: 3}
+  deathVolume: 1
+  jumpClip: {fileID: 8300000, guid: 15a4885bfacf81a4aa61a275ed2f80ac, type: 3}
+  jumpVolume: 1
   checkPointPassed: {x: 0, y: 0, z: 0}
 --- !u!114 &464098750339575379
 MonoBehaviour:
@@ -291,7 +293,7 @@ MonoBehaviour:
   fullHealth: {fileID: -205270267638800340, guid: b7394bc1a6afb73469d547cd5525f3ac, type: 3}
   emptyHealth: {fileID: 6960772035834626590, guid: b7394bc1a6afb73469d547cd5525f3ac, type: 3}
   health: 0
-  SceneName: Scene1
+  SceneName: Scene2
 --- !u!114 &226605911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -304,7 +306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9b0c06d8b6665048bc355d4b33b6a6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: Scene1
+  SceneName: Scene2
 --- !u!114 &-3578386765113525154
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -687,10 +687,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -2456113541462624727, guid: 0e3d8dfcbf1011c4ba65386bbda93557, type: 3}
-      propertyPath: SceneName
-      value: Scene1
-      objectReference: {fileID: 0}
-    - target: {fileID: -2456113541462624727, guid: 0e3d8dfcbf1011c4ba65386bbda93557, type: 3}
       propertyPath: hearts.Array.data[0]
       value: 
       objectReference: {fileID: 2104311680}
@@ -730,6 +726,14 @@ PrefabInstance:
       propertyPath: hearts.Array.data[9]
       value: 
       objectReference: {fileID: 251505306}
+    - target: {fileID: 464098750339575376, guid: 0e3d8dfcbf1011c4ba65386bbda93557, type: 3}
+      propertyPath: jumpClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 15a4885bfacf81a4aa61a275ed2f80ac, type: 3}
+    - target: {fileID: 464098750339575376, guid: 0e3d8dfcbf1011c4ba65386bbda93557, type: 3}
+      propertyPath: deathClip
+      value: 
+      objectReference: {fileID: 8300000, guid: eb0d42b0e48f9b046b1a20b2850bbbaa, type: 3}
     - target: {fileID: 464098750339575378, guid: 0e3d8dfcbf1011c4ba65386bbda93557, type: 3}
       propertyPath: m_RootOrder
       value: 1

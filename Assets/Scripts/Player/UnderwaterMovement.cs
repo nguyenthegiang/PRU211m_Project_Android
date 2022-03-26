@@ -14,6 +14,14 @@ public class UnderwaterMovement : MonoBehaviour
     [SerializeField]
     public Joystick joystick;
 
+    AudioSource audioSource;
+    [Header("SFX")]
+    [SerializeField] AudioClip divingClip;
+    [SerializeField] [Range(0f, 5f)] float divingVolume = 1f;    
+    [SerializeField] AudioClip deathClip;
+    [SerializeField] [Range(0f, 5f)] float deathVolume = 1f;
+    [SerializeField] AudioClip explosionClip;
+    [SerializeField] [Range(0f, 5f)] float explosionVolume = 2f;
     public Vector3 checkPointPassed;
 
     float _horizontalMove;
@@ -30,6 +38,7 @@ public class UnderwaterMovement : MonoBehaviour
         body = gameObject.GetComponent<Rigidbody2D>();
         objectHeight = gameObject.GetComponent<Renderer>().bounds.size.y;
         spawnPosition = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y - objectHeight, gameObject.transform.position.z);
+        audioSource = gameObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -42,12 +51,14 @@ public class UnderwaterMovement : MonoBehaviour
             if (_horizontalMove > 0 && !m_FacingRight)
             {
                 // ... flip the player.
+                audioSource.PlayOneShot(divingClip, divingVolume);
                 Flip();
             }
             // Otherwise if the input is moving the player left and the player is facing right...
             else if (_horizontalMove < 0 && m_FacingRight)
             {
                 // ... flip the player.
+                audioSource.PlayOneShot(divingClip, divingVolume);
                 Flip();
             }
             Vector3 moveVector = new Vector3(_horizontalMove, _verticalMove, 0);
@@ -67,6 +78,7 @@ public class UnderwaterMovement : MonoBehaviour
 
     public void DropBomb()
     {
+        audioSource.PlayOneShot(explosionClip, explosionVolume);
         GameObject bomb = Instantiate(submarineBomb, spawnPosition, Quaternion.identity);
         bomb.GetComponent<Rigidbody2D>().AddForce(2f * Vector3.down);
     }
@@ -87,7 +99,7 @@ public class UnderwaterMovement : MonoBehaviour
         //if touch a Hazard -> die
         if (collision.gameObject.tag == "Hazard")
         {
-
+            audioSource.PlayOneShot(deathClip, deathVolume);
             StartCoroutine(waiter());
         }
     }

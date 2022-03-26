@@ -7,6 +7,8 @@ public class RunningRock : MonoBehaviour
     [SerializeField]
     public float thrust;
 
+    //create audiosource for playing sound
+    AudioSource audioSource;
     //for recreate rock
     private GameObject RunningRockPrefab;
     private Vector3 rockPosition;
@@ -15,6 +17,7 @@ public class RunningRock : MonoBehaviour
     {
         rockPosition = transform.position;
         RunningRockPrefab = (GameObject)Resources.Load(@"Prefabs\RunningRock");
+        audioSource = gameObject.GetComponent<AudioSource>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -22,14 +25,15 @@ public class RunningRock : MonoBehaviour
         //When kill mainCharacter -> Destroy & Recreate the Rock
         if (collision.gameObject.tag == "Player")
         {
+            audioSource.Stop();
             recreateObject();
-
             Instantiate(RunningRockPrefab, rockPosition, Quaternion.identity);
         }
     }
 
     public void Roll()
     {
+        audioSource.Play();
         Rigidbody2D rd2d = gameObject.GetComponent<Rigidbody2D>();
         rd2d.AddForce(transform.right * thrust);
         rd2d.AddForce(transform.right * thrust, ForceMode2D.Impulse);
