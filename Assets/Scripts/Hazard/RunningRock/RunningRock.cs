@@ -28,6 +28,9 @@ public class RunningRock : MonoBehaviour
             audioSource.Stop();
             recreateObject();
             Instantiate(RunningRockPrefab, rockPosition, Quaternion.identity);
+        } else if (collision.gameObject.tag == "Breakable")
+        {
+            audioSource.Stop();
         }
     }
 
