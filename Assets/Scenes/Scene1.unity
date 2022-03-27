@@ -726,18 +726,6 @@ PrefabInstance:
       propertyPath: hearts.Array.data[9]
       value: 
       objectReference: {fileID: 251505306}
-    - target: {fileID: 0}
-      propertyPath: SceneName
-      value: Scene1
-      objectReference: {fileID: 0}
-    - target: {fileID: 464098750339575376, guid: 0e3d8dfcbf1011c4ba65386bbda93557, type: 3}
-      propertyPath: jumpClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 15a4885bfacf81a4aa61a275ed2f80ac, type: 3}
-    - target: {fileID: 464098750339575376, guid: 0e3d8dfcbf1011c4ba65386bbda93557, type: 3}
-      propertyPath: deathClip
-      value: 
-      objectReference: {fileID: 8300000, guid: eb0d42b0e48f9b046b1a20b2850bbbaa, type: 3}
     - target: {fileID: 464098750339575378, guid: 0e3d8dfcbf1011c4ba65386bbda93557, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -788,30 +776,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e3d8dfcbf1011c4ba65386bbda93557, type: 3}
---- !u!1 &226605910 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 464098750339575383, guid: 0e3d8dfcbf1011c4ba65386bbda93557, type: 3}
-  m_PrefabInstance: {fileID: 226605909}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &226605911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 226605910}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9b0c06d8b6665048bc355d4b33b6a6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SceneName: Scene1
 --- !u!114 &226605912 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 464098750339575376, guid: 0e3d8dfcbf1011c4ba65386bbda93557, type: 3}
   m_PrefabInstance: {fileID: 226605909}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 226605910}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4bc7301790599a04ea1833af9dfe2179, type: 3}
