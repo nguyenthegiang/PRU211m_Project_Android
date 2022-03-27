@@ -33486,14 +33486,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainCharacter
       objectReference: {fileID: 0}
-    - target: {fileID: 7981352488922222082, guid: 0e3d8dfcbf1011c4ba65386bbda93557, type: 3}
-      propertyPath: m_Pitch
-      value: 0.18
-      objectReference: {fileID: 0}
-    - target: {fileID: 7981352488922222082, guid: 0e3d8dfcbf1011c4ba65386bbda93557, type: 3}
-      propertyPath: m_Volume
-      value: 0.518
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e3d8dfcbf1011c4ba65386bbda93557, type: 3}
 --- !u!4 &1819039172 stripped

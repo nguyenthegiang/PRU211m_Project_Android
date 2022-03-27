@@ -227,8 +227,6 @@ MonoBehaviour:
   heartManager: {fileID: 0}
   deathClip: {fileID: 8300000, guid: eb0d42b0e48f9b046b1a20b2850bbbaa, type: 3}
   deathVolume: 1
-  jumpClip: {fileID: 8300000, guid: 15a4885bfacf81a4aa61a275ed2f80ac, type: 3}
-  jumpVolume: 1
   checkPointPassed: {x: 0, y: 0, z: 0}
 --- !u!114 &464098750339575379
 MonoBehaviour:
@@ -331,8 +329,8 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
+  m_Volume: 0.518
+  m_Pitch: 0.18
   Loop: 0
   Mute: 0
   Spatialize: 0
