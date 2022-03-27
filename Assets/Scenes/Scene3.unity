@@ -18414,6 +18414,10 @@ PrefabInstance:
       propertyPath: hearts.Array.data[9]
       value: 
       objectReference: {fileID: 258413010}
+    - target: {fileID: 226605911, guid: 0e3d8dfcbf1011c4ba65386bbda93557, type: 3}
+      propertyPath: SceneName
+      value: Scene3
+      objectReference: {fileID: 0}
     - target: {fileID: 464098750339575376, guid: 0e3d8dfcbf1011c4ba65386bbda93557, type: 3}
       propertyPath: heartManager
       value: 

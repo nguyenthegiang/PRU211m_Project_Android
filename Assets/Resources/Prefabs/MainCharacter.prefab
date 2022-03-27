@@ -76,7 +76,6 @@ GameObject:
   - component: {fileID: 464098750339575376}
   - component: {fileID: 464098750339575379}
   - component: {fileID: -2456113541462624727}
-  - component: {fileID: 226605911}
   - component: {fileID: -3578386765113525154}
   - component: {fileID: 7981352488922222082}
   m_Layer: 3
@@ -291,19 +290,6 @@ MonoBehaviour:
   fullHealth: {fileID: -205270267638800340, guid: b7394bc1a6afb73469d547cd5525f3ac, type: 3}
   emptyHealth: {fileID: 6960772035834626590, guid: b7394bc1a6afb73469d547cd5525f3ac, type: 3}
   health: 0
-  SceneName: Scene2
---- !u!114 &226605911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 464098750339575383}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9b0c06d8b6665048bc355d4b33b6a6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   SceneName: Scene2
 --- !u!114 &-3578386765113525154
 MonoBehaviour:
